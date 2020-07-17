@@ -8,16 +8,17 @@ Baselines (currently just ResNets and MobileNets) on Stanford Cars Using a minim
 |ResNet-18    |   86.0   |
 |ResNet-50    |   90.0   |
 |ResNet-101   |   90.1   |
-|ResNet-152   |  *90.1*  |
+|ResNet-152   |  _90.1_  |
 |MobileNetv2  |   87.1   |
 |ResNet-18\*  |   61.5   |
 |ResNet-50\*  |    7.9   |
-|ResNet-101\* |          |
-|ResNet-152\* |          |
-|MobileNetv2\*|          |
+|ResNet-101\* |    5.8   |
+|ResNet-152\* |    4.4   |
+|MobileNetv2\*|   66.4   |
 
-* denotes no pretraining.
+\* denotes no pretraining.
 Each model just uses the default learning rate schedule (decay by 10 every 30 epochs), and 90 epochs of training.
+Models without pretraining seem to have stability issues as sometimes they converge to less than 10% accuracy.
 
 Dependencies:
 + PyTorch
